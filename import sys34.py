@@ -20,13 +20,14 @@ class MapsInterface(QWidget):
         self.button = QPushButton('Open in Maps')
         self.button.clicked.connect(self.open_maps)
 
-        # Create a vertical layout and add the widgets to it
+        # vertical layout
         layout = QVBoxLayout()
+        #add the widgets to the layout
         layout.addWidget(self.label)
         layout.addWidget(self.input_field)
         layout.addWidget(self.button)
 
-        # Set the layout of the main widget
+        #layout of the main widget
         self.setLayout(layout)
 
     def open_maps(self):
